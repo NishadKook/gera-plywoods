@@ -31,7 +31,10 @@ export function ScrollXCarousel({
   ...props
 }: React.HTMLAttributes<HTMLDivElement>) {
   const carouselRef = React.useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({ target: carouselRef });
+  const { scrollYProgress } = useScroll({
+    target: carouselRef,
+    offset: ["start start", "end end"],
+  });
   return (
     <ScrollXCarouselContext.Provider value={{ scrollYProgress }}>
       <div
