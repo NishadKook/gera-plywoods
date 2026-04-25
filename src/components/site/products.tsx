@@ -61,7 +61,10 @@ const products: Product[] = [
 
 export function Products() {
   return (
-    <section id="products" className="border-t border-border bg-muted/40 py-20 lg:py-28">
+    <section
+      id="products"
+      className="section-grain border-t border-border bg-background/70 py-20 backdrop-blur-sm lg:py-28"
+    >
       <div className="container mx-auto px-4">
         <div className="mx-auto mb-12 max-w-2xl text-center">
           <p className="text-sm font-medium uppercase tracking-[0.2em] text-primary">
