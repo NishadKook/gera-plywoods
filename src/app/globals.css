@@ -96,18 +96,3 @@ body {
   background-color: oklch(0.97 0.02 82 / 0.85);
   backdrop-filter: blur(2px);
 }
-
-.section-grain {
-  position: relative;
-  isolation: isolate;
-}
-.section-grain::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  pointer-events: none;
-  opacity: 0.55;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='280' height='280'><filter id='g'><feTurbulence type='turbulence' baseFrequency='0.38 0.01' numOctaves='3' seed='3'/><feColorMatrix values='0 0 0 0 0.40  0 0 0 0 0.22  0 0 0 0 0.10  0 0 0 0.20 0'/></filter><rect width='100%' height='100%' filter='url(%23g)'/></svg>");
-  background-size: 280px 280px;
-}

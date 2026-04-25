@@ -85,10 +85,7 @@ const SLIDES: Slide[] = [
 
 export function Showcase() {
   return (
-    <section
-      id="showcase"
-      className="section-grain border-y border-border bg-secondary/30"
-    >
+    <section id="showcase">
       <div className="container mx-auto px-4 pt-20 lg:pt-28">
         <div className="mx-auto max-w-2xl text-center">
           <p className="text-sm font-medium uppercase tracking-[0.2em] text-primary">
