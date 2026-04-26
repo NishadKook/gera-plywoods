@@ -103,9 +103,6 @@ export function Showcase() {
 
       <ScrollXCarousel className="h-[200vh]">
         <ScrollXCarouselContainer className="h-dvh place-content-center flex flex-col gap-8 py-12">
-          <div className="pointer-events-none absolute inset-[0_auto_0_0] z-10 h-[103%] w-[12vw] bg-[linear-gradient(90deg,_var(--background)_35%,_transparent)]" />
-          <div className="pointer-events-none absolute inset-[0_0_0_auto] z-10 h-[103%] w-[15vw] bg-[linear-gradient(270deg,_var(--background)_35%,_transparent)]" />
-
           <ScrollXCarouselWrap className="flex space-x-8 [&>*:first-child]:ml-8">
             {SLIDES.map((slide) => (
               <CardHoverReveal
